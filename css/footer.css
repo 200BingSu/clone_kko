@@ -1,6 +1,94 @@
 /* 하단영역 */
 .footer {
   width: 100%;
-  height: 265px;
+}
+/*푸터 상단*/
+.footer-main {
+  width: 100%;
+  height: 300px;
   background-color: #1e1e1e;
+}
+.footer-main .layout {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 40px 0 64px;
+  display: flex;
+  align-items: center;
+}
+.footer-main .layout .left {
+  width: 770px;
+  height: 195px;
+}
+.footer-main .layout .left .footer-img {
+  display: block;
+  width: 121px;
+  height: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.footer-main .layout .left .footer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer-main .layout .left .footer-main-text {
+  color: #999;
+  margin-bottom: 40px;
+}
+.footer-main .layout .left .footer-btn {
+  color: #1e1e1e;
+  background-color: #ffc600;
+  border-radius: 30px;
+  /* white-space: nowrap; */
+
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-main .layout .right {
+  width: 345px;
+  height: 195px;
+  display: flex;
+  gap: 85px;
+}
+/* .footer-main .layout .right .right-title {
+  color: #fff;
+  margin-bottom: 30px;
+} */
+.footer-main .layout .right .site-map-list {
+  list-style: none;
+}
+
+.site-map-list li {
+  margin-bottom: 25px;
+}
+.site-map-list li:first-child {
+  margin-bottom: 35px;
+}
+
+.site-map-list b {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.site-map-list a {
+  text-decoration: none;
+  color: #999;
+}
+
+/* 푸터 하단 */
+.footer-copy {
+  width: 100%;
+  height: 100px;
+}
+.footer-copy .layout {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #191919;
+}
+.footer-copy .layout .left {
+}
+.footer-copy .layout .right {
 }
