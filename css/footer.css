@@ -1,94 +1,124 @@
 /* 하단영역 */
 .footer {
   width: 100%;
+  height: 400px;
+  background-color: #1e1e1e;
 }
-/*푸터 상단*/
 .footer-main {
   width: 100%;
   height: 300px;
-  background-color: #1e1e1e;
+  padding: 40px 0px;
 }
+
 .footer-main .layout {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 40px 0 64px;
   display: flex;
-  align-items: center;
+  padding: 0 5px;
+  margin: 0 auto;
+  max-width: 1180px;
+  justify-content: space-between;
 }
 .footer-main .layout .left {
-  width: 770px;
-  height: 195px;
 }
-.footer-main .layout .left .footer-img {
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo a {
   display: block;
   width: 121px;
   height: 20px;
-  margin-bottom: 30px;
-  cursor: pointer;
 }
-.footer-main .layout .left .footer-img img {
+.footer-logo a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.footer-main .layout .left .footer-main-text {
-  color: #999;
+
+.footer-txt {
+  color: #999999;
   margin-bottom: 40px;
 }
-.footer-main .layout .left .footer-btn {
-  color: #1e1e1e;
-  background-color: #ffc600;
-  border-radius: 30px;
-  /* white-space: nowrap; */
 
-  padding: 10px 20px;
-  text-decoration: none;
+.footer-link {
+}
+.footer-link a {
   display: inline-block;
+  padding: 11px 20px;
+  color: #1e1e1e;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #f9c500;
+  border-radius: 20px;
 }
 
 .footer-main .layout .right {
-  width: 345px;
-  height: 195px;
   display: flex;
   gap: 85px;
 }
-/* .footer-main .layout .right .right-title {
-  color: #fff;
-  margin-bottom: 30px;
-} */
-.footer-main .layout .right .site-map-list {
+.site-map-list {
   list-style: none;
 }
-
 .site-map-list li {
   margin-bottom: 25px;
 }
 .site-map-list li:first-child {
   margin-bottom: 35px;
 }
+.site-map-list li:last-child {
+  margin-bottom: 0;
+}
 
-.site-map-list b {
-  color: #fff;
-  font-size: 16px;
+.site-map-list li b {
+  color: #ffffff;
   font-weight: 700;
+  font-size: 16px;
 }
-.site-map-list a {
+.site-map-list li a {
+  color: #999999;
   text-decoration: none;
-  color: #999;
+}
+.rot-icon {
+  transform: rotate(40deg);
 }
 
-/* 푸터 하단 */
 .footer-copy {
   width: 100%;
   height: 100px;
+  padding: 40px 0;
+  background-color: #191919;
 }
 .footer-copy .layout {
-  max-width: 1170px;
-  margin: 0 auto;
   display: flex;
-  background-color: #191919;
+  margin: 0 auto;
+  max-width: 1170px;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer-copy .layout .left {
 }
+.copy {
+  color: #666666;
+}
+
 .footer-copy .layout .right {
+}
+.sns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.linkedin {
+  color: #666666;
+  font-size: 24px;
+}
+.youtube {
+  color: #666666;
+  font-size: 24px;
+}
+.github {
+  color: #666666;
+  font-size: 24px;
+}
+.facebook {
+  color: #666666;
+  font-size: 24px;
 }
