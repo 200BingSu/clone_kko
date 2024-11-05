@@ -47,6 +47,22 @@
   width: 100%;
   height: 100%;
 }
+
+/* 하단 카드 슬라이드 */
+.mb-card-slide {
+  margin-top: 60px;
+  display: none;
+}
+/* js로 변경 예정 */
+.mb-card-slide-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.list-card-bt-wrap {
+  display: flex;
+  justify-content: center;
+}
 /* 가로 너비 대비 세로가 평상시에도 변한다. */
 /* 반응형 */
 @media screen and (max-width: 1024px) {
@@ -66,5 +82,8 @@
 
   .main-slide .right {
     display: none;
+  }
+  .mb-card-slide {
+    display: block;
   }
 }

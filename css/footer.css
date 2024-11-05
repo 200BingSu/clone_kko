@@ -1,12 +1,10 @@
 /* 하단영역 */
 .footer {
   width: 100%;
-  height: 400px;
   background-color: #1e1e1e;
 }
 .footer-main {
   width: 100%;
-  height: 300px;
   padding: 40px 0px;
 }
 
@@ -123,4 +121,16 @@
 .facebook {
   color: #666666;
   font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-main .layout {
+    display: block;
+  }
+  .footer-main .layout .right {
+    margin-top: 40px;
+  }
+  .site-map-list {
+    width: 50%;
+  }
 }
