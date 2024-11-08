@@ -71,7 +71,7 @@ window.addEventListener("load", function () {
   //Pc 버전에서는 모두(버튼, 모바일 메뉴) 초기화
   window.addEventListener("resize", function () {
     const windowWidth = window.innerWidth;
-    console.log(windowWidth);
+    // console.log(windowWidth);
     // css 코드의 반응형 작동이 1024px부터 작동하니까.
     if (windowWidth > 1024) {
       //모바일 메뉴 버튼을 원래대로 되돌린다.
