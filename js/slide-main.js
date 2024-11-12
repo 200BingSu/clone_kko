@@ -8,11 +8,12 @@ window.addEventListener("load", function () {
     })
     .then(function (result) {
       let htmlMAIN = "";
-      for (let i = 0; i < 4; i++) {
+      // 변경: 4라는 숫자를 .length 즉 길이로 바꿈.
+      for (let i = 0; i < result.length; i++) {
         const obj = result[i];
 
         const tag = `
-        <div class="swiper-slide" style="position: relative">
+        <div class="swiper-slide" style="position: relative" data-pc="${obj.pc}" data-mb="${obj.mb}">
           <a href="${obj.url}">
             <span class="visual-title"
               style="position: absolute;
@@ -25,8 +26,55 @@ window.addEventListener("load", function () {
             <img src="./images/${obj.pic}" alt="${obj.title}" />
           </a>
         </div>`;
+        //  모든 html 글을 하나로 합치기
         htmlMAIN += tag;
       }
+      // 추가  : 현재 PC 화면인지 아니지를 먼저 구분합니다.
+      // 추가 : 현재 어떤 상태인지를 먼저 저장해 둡니다.
+      // 추가: 우리는 document.querySelect로
+      const slideList = document.querySelectorAll(
+        ".visual-slide .swiper-wrapper .swiper-slide"
+      );
+
+      // 나중에 다시 써라
+      slideList.forEach(function (aaa) {
+        // console.log("콘솔 찍히고 있나요?", aaa);
+      });
+
+      let windowState = "PC";
+      // 윈도우 너비 파악
+      const windowWidth = window.innerWidth;
+      // 조건에 따라서 버전 확인
+      if (windowWidth > 1024) {
+        if (windowState != "PC") {
+          windowState = "PC";
+          console.log("PC 버전");
+        }
+      } else {
+        if (windowState != "MB") {
+          windowState = "MB";
+          console.log("MB 버전");
+        }
+      }
+      console.log(windowState);
+
+      window.addEventListener("resize", function () {
+        // 윈도우 너비 파악
+        const windowWidth = window.innerWidth;
+        // 조건에 따라서 버전 확인
+        if (windowWidth > 1024) {
+          if (windowState != "PC") {
+            windowState = "PC";
+            console.log("PC 버전");
+          }
+        } else {
+          if (windowState != "MB") {
+            windowState = "MB";
+            console.log("MB 버전");
+          }
+        }
+      });
+
       //console.log(htmlMAIN);
       const mainSlideTag = document.querySelector("#visual-slide-api");
       mainSlideTag.innerHTML = htmlMAIN;
