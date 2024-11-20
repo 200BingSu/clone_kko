@@ -40,10 +40,10 @@ $(document).ready(function () {
       });
       headerLogo.autoplay.stop();
       const logo = document.querySelector("#logo-motion");
-      logo.addEventListener("mouseenter", function () {
+      logo.on("mouseenter", function () {
         headerLogo.autoplay.start();
       });
-      logo.addEventListener("mouseleave", function () {
+      logo.on("mouseleave", function () {
         headerLogo.autoplay.stop();
         headerLogo.slideToLoop(0);
       });
