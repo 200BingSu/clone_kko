@@ -1,5 +1,3 @@
-import React from "react";
-
 function MbMenu() {
   return (
     <div className="mb-menu">

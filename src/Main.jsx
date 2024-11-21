@@ -1,14 +1,6 @@
-import React from "react";
-import MainTop from "./MainTop";
-import MbCardSlide from "./MbCardSlide";
+import { createRoot } from "react-dom/client";
+import "./css/common.css";
+import "./index.css";
+import Page from "./Page.jsx";
 
-function Main() {
-  return (
-    <>
-      <MainTop></MainTop>
-      <MbCardSlide></MbCardSlide>
-    </>
-  );
-}
-
-export default Main;
+createRoot(document.getElementById("root")).render(<Page></Page>);

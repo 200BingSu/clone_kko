@@ -1,5 +1,3 @@
-import React from "react";
-
 function ListCateWrap() {
   return (
     <div className="list-cate-wrap">

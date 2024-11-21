@@ -1,5 +1,3 @@
-import React from "react";
-
 function ListNewWrap() {
   return (
     <div className="list-new-wrap">

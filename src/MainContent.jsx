@@ -1,4 +1,3 @@
-import React from "react";
 import ListNewWrap from "./ListNewWrap";
 import Banner from "./Banner";
 import ListCateWrap from "./ListCateWrap";
@@ -8,11 +7,11 @@ function MainContent() {
   return (
     <div className="main-content">
       <div className="left">
-        {/*뉴스*/}
+        {/* 뉴스 */}
         <ListNewWrap></ListNewWrap>
-        {/*베너*/}
+        {/* 배너 */}
         <Banner></Banner>
-        {/*크루*/}
+        {/* 크루 */}
         <ListCateWrap></ListCateWrap>
       </div>
       <div className="right">

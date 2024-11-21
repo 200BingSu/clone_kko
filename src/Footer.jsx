@@ -1,4 +1,4 @@
-import React from "react";
+import "./css/footer.css";
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
             <div className="footer-logo">
               <a href="#">
                 <img
-                  src="./images/etc/logo-kakao-footer.png"
+                  src="/images/etc/logo-kakao-footer.png"
                   alt="카카오 블로그"
                 />
               </a>
